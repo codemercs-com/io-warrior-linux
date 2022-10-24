@@ -76,5 +76,5 @@ Now your chosen user (here 'pi') have write/read access to the IO-Warrior family
 
 &nbsp;
 ## Important Note
-Witout add a rules file you have only access to the IO-Warrior with 'sudo' or root permissions.  
+Without add a rules file you have only access to the IO-Warrior with 'sudo' or root permissions.  
 
