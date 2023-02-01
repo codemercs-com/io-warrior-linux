@@ -1,14 +1,17 @@
 # Patch for IO-Warrior100 kernel module
-There is a bug in the kernel module for the IO-Warrior100 IO report size. This bug make writing to the IO-Interface impossible.
-The included **iowarrior.c** includes the fix for this bug. You have to replace the iowarrior.c in the kernel sources and compile the iowarrior module.  
 
-The prefered solution: download the kernel sources and fix the bug for a specific kernel version by yourself for all latest in the iowarrior.c between the different versions and distributions.  
+## Update 01.02.2023
+**The bugfix was added to the stable kernel for 4.14, 4.19, 5.4, 5.10, 5.15 and 6.10. on 22.01.2023 by Greg Kroah-Hartman.**  
+
+~~There is a bug in the kernel module for the IO-Warrior100 IO report size. This bug make writing to the IO-Interface impossible.
+The included **iowarrior.c** includes the fix for this bug. You have to replace the iowarrior.c in the kernel sources and compile the iowarrior module.~~  
+
+~~The prefered solution: download the kernel sources and fix the bug for a specific kernel version by yourself for all latest in the iowarrior.c between the different versions and distributions.~~  
   
-The *iowarrior.c* will be find in the kernel sources in **/drivers/usb/misc/**
 
-
-## Fixing code
-The bug will be found near line 817 in iowarrior.c.  
+## Fixing code by hand
+The *iowarrior.c* will be find in the kernel sources in **/drivers/usb/misc/**  
+The bug will be found near line 817 in iowarrior.c.
 
 
 ```
@@ -45,9 +48,3 @@ dev->report_size = 12;
 ```
 
 After replacing the code line you have to compile the module und replace the **iowarrior.ko**.
-
-
-
-
-
-
