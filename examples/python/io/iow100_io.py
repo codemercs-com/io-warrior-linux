@@ -239,6 +239,3 @@ else:
     print("Some issues with the API or not IO-Warrior detected")
 
 IowKitCloseDevice(handle)   # Never forget to close @ the end!
-
-report = IOWKIT28_IO_REPORT(0x00, 0xFF, 0xFF, 0xFF, 0xFF) 
-ret = IowKitWrite(handle, IOW_PIPE_IO_PINS, ctypes.byref(report), ctypes.sizeof(IOWKIT28_IO_REPORT))
