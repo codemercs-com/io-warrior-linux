@@ -1,0 +1,2 @@
+# udev rules for iowarrior device (ie. for raspberry pi)
+KERNEL=="iowarrior*", NAME="usb/iowarrior%n", OWNER="pi", GROUP="pi", MODE="0666"
