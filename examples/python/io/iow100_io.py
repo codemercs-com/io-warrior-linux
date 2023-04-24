@@ -156,7 +156,10 @@ def _IowKitGetSerialNumber(handle):
 
 # Write the IO ports
 def WriteIO(handle):
-    write = IOWKIT100_IO_REPORT(0x00, 0x02, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF)
+    # Build a report to send to IO-Warrior100.
+    write = IOWKIT100_IO_REPORT(0x00, #report ID
+                                0x02, #set Port0 (Pin 0.0 to 0.7)
+                                0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF) #set all other ports to 0xFF (default)
     ret = IowKitWrite(handle, IOW_PIPE_IO_PINS, ctypes.byref(write), ctypes.sizeof(IOWKIT100_IO_REPORT))
 
     if(ret != IOWKIT100_IO_REPORT_SIZE):
