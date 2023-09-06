@@ -328,7 +328,7 @@ Copyright (C) 2006 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/home/pi/Downloads/iowkit_1.7/libiowkit-1.7.0'
+ac_pwd='/home/pi/Documents/github/io-warrior-linux/api/libiowkit-1.7.0'
 srcdir='.'
 INSTALL='/usr/bin/install -c'
 # If no file are specified by the user, then we need to provide default
@@ -527,33 +527,33 @@ s,@INSTALL_DATA@,|#_!!_#|${INSTALL} -m 644,g
 s,@CYGPATH_W@,|#_!!_#|echo,g
 s,@PACKAGE@,|#_!!_#|libiowkit,g
 s,@VERSION@,|#_!!_#|1.5.0,g
-s,@ACLOCAL@,|#_!!_#|${SHELL} /home/pi/Downloads/iowkit_1.7/libiowkit-1.7.0/missing --run aclocal-1.9,g
-s,@AUTOCONF@,|#_!!_#|${SHELL} /home/pi/Downloads/iowkit_1.7/libiowkit-1.7.0/missing --run autoconf,g
-s,@AUTOMAKE@,|#_!!_#|${SHELL} /home/pi/Downloads/iowkit_1.7/libiowkit-1.7.0/missing --run automake-1.9,g
-s,@AUTOHEADER@,|#_!!_#|${SHELL} /home/pi/Downloads/iowkit_1.7/libiowkit-1.7.0/missing --run autoheader,g
-s,@MAKEINFO@,|#_!!_#|${SHELL} /home/pi/Downloads/iowkit_1.7/libiowkit-1.7.0/missing --run makeinfo,g
-s,@install_sh@,|#_!!_#|/home/pi/Downloads/iowkit_1.7/libiowkit-1.7.0/install-sh,g
+s,@ACLOCAL@,|#_!!_#|${SHELL} /home/pi/Documents/github/io-warrior-linux/api/libiowkit-1.7.0/missing --run aclocal-1.9,g
+s,@AUTOCONF@,|#_!!_#|${SHELL} /home/pi/Documents/github/io-warrior-linux/api/libiowkit-1.7.0/missing --run autoconf,g
+s,@AUTOMAKE@,|#_!!_#|${SHELL} /home/pi/Documents/github/io-warrior-linux/api/libiowkit-1.7.0/missing --run automake-1.9,g
+s,@AUTOHEADER@,|#_!!_#|${SHELL} /home/pi/Documents/github/io-warrior-linux/api/libiowkit-1.7.0/missing --run autoheader,g
+s,@MAKEINFO@,|#_!!_#|${SHELL} /home/pi/Documents/github/io-warrior-linux/api/libiowkit-1.7.0/missing --run makeinfo,g
+s,@install_sh@,|#_!!_#|/home/pi/Documents/github/io-warrior-linux/api/libiowkit-1.7.0/install-sh,g
 s,@STRIP@,|#_!!_#|strip,g
 s,@INSTALL_STRIP_PROGRAM@,|#_!!_#|${SHELL} $(install_sh) -c -s,g
 s,@mkdir_p@,|#_!!_#|mkdir -p --,g
 s,@AWK@,|#_!!_#|gawk,g
 s,@SET_MAKE@,|#_!!_#|,g
 s,@am__leading_dot@,|#_!!_#|.,g
-s,@AMTAR@,|#_!!_#|${SHELL} /home/pi/Downloads/iowkit_1.7/libiowkit-1.7.0/missing --run tar,g
+s,@AMTAR@,|#_!!_#|${SHELL} /home/pi/Documents/github/io-warrior-linux/api/libiowkit-1.7.0/missing --run tar,g
 s,@am__tar@,|#_!!_#|${AMTAR} chof - "$$tardir",g
 s,@am__untar@,|#_!!_#|${AMTAR} xf -,g
 s,@LIBIOWKIT_CURRENT@,|#_!!_#|1,g
 s,@LIBIOWKIT_REVISION@,|#_!!_#|5,g
 s,@LIBIOWKIT_AGE@,|#_!!_#|0,g
 s,@LIBIOWKIT_RELEASE@,|#_!!_#|1.5,g
-s,@build@,|#_!!_#|armv7l-unknown-linux,g
+s,@build@,|#_!!_#|armv7l-unknown-linux-gnueabihf,g
 s,@build_cpu@,|#_!!_#|armv7l,g
 s,@build_vendor@,|#_!!_#|unknown,g
-s,@build_os@,|#_!!_#|linux,g
-s,@host@,|#_!!_#|armv7l-unknown-linux,g
+s,@build_os@,|#_!!_#|linux-gnueabihf,g
+s,@host@,|#_!!_#|armv7l-unknown-linux-gnueabihf,g
 s,@host_cpu@,|#_!!_#|armv7l,g
 s,@host_vendor@,|#_!!_#|unknown,g
-s,@host_os@,|#_!!_#|linux,g
+s,@host_os@,|#_!!_#|linux-gnueabihf,g
 s,@CC@,|#_!!_#|gcc,g
 s,@CFLAGS@,|#_!!_#|-O2 -Wall -g,g
 s,@LDFLAGS@,|#_!!_#|,g
@@ -578,18 +578,18 @@ s,@AR@,|#_!!_#|ar,g
 s,@RANLIB@,|#_!!_#|ranlib,g
 s,@CPP@,|#_!!_#|gcc -E,g
 s,@CXX@,|#_!!_#|g++,g
-s,@CXXFLAGS@,|#_!!_#|-g -O2,g
-s,@ac_ct_CXX@,|#_!!_#|g++,g
-s,@CXXDEPMODE@,|#_!!_#|depmode=gcc3,g
+s,@CXXFLAGS@,|#_!!_#|,g
+s,@ac_ct_CXX@,|#_!!_#|,g
+s,@CXXDEPMODE@,|#_!!_#|depmode=none,g
 CEOF
 cat >"$tmp/subs-2.sed" <<\CEOF
 /@[a-zA-Z_][a-zA-Z_0-9]*@/!b end
-s,@am__fastdepCXX_TRUE@,|#_!!_#|,g
-s,@am__fastdepCXX_FALSE@,|#_!!_#|#,g
-s,@CXXCPP@,|#_!!_#|g++ -E,g
-s,@F77@,|#_!!_#|f77,g
-s,@FFLAGS@,|#_!!_#|-g -O2,g
-s,@ac_ct_F77@,|#_!!_#|f77,g
+s,@am__fastdepCXX_TRUE@,|#_!!_#|#,g
+s,@am__fastdepCXX_FALSE@,|#_!!_#|,g
+s,@CXXCPP@,|#_!!_#|,g
+s,@F77@,|#_!!_#|,g
+s,@FFLAGS@,|#_!!_#|,g
+s,@ac_ct_F77@,|#_!!_#|,g
 s,@LIBTOOL@,|#_!!_#|$(SHELL) $(top_builddir)/libtool,g
 s,@LINUX_API@,|#_!!_#|0,g
 s,@LINUX_API_TRUE@,|#_!!_#|,g
@@ -598,9 +598,9 @@ s,@LIBOBJS@,|#_!!_#|,g
 s,@JAVA_BIN@,|#_!!_#|yes,g
 s,@HAS_JAVA_TRUE@,|#_!!_#|,g
 s,@HAS_JAVA_FALSE@,|#_!!_#|#,g
-s,@DOXYGEN_BIN@,|#_!!_#|no,g
-s,@HAS_DOXYGEN_TRUE@,|#_!!_#|#,g
-s,@HAS_DOXYGEN_FALSE@,|#_!!_#|,g
+s,@DOXYGEN_BIN@,|#_!!_#|yes,g
+s,@HAS_DOXYGEN_TRUE@,|#_!!_#|,g
+s,@HAS_DOXYGEN_FALSE@,|#_!!_#|#,g
 s,@LTLIBOBJS@,|#_!!_#|,g
 :end
 s/|#_!!_#|//g
