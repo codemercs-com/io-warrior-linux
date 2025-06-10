@@ -9,12 +9,12 @@
 
 jlong HandleToJLong(IOWKIT_HANDLE handle)
  {
-  return (jlong) ((int) handle);
+  return (jlong) ((long) handle);
  }
 
 IOWKIT_HANDLE JLongToHandle(jlong handle)
  {
-  return (IOWKIT_HANDLE) ((int) handle);
+  return (IOWKIT_HANDLE) ((long) handle);
  }
 
 /*
