@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # io-warrior-linux
 SDK and samplecode for IO-Warrior devices under Linux
 =======
@@ -19,4 +18,3 @@ The instructions for the installation will be found in the *api* directory.
 &nbsp;
 ## Contact
 If you have any questions about the IO-Warrior please contact **support@codemercs.com** or using the [issues](https://github.com/codemercs-com/io-warrior-linux/issues) section in this repository. There is also a company [forum](https://forum.codemercs.com/) with many solved questions.
->>>>>>> 05b2d87897750d87bc04511fccf4ce40650033cf
